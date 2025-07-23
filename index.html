@@ -1,0 +1,135 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Perfect Trip - Your Simple, Printable Travel Itinerary Tool</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        .container {
+            max-width: 900px; /* Max width for content */
+        }
+        .btn-primary {
+            background-color: #3b82f6; /* Blue */
+            color: white;
+            padding: 1rem 2.5rem; /* Larger padding for prominence */
+            border-radius: 0.75rem; /* More rounded corners */
+            font-weight: 700; /* Bolder text */
+            font-size: 1.25rem; /* Larger font size */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+        }
+        .btn-primary:hover {
+            background-color: #2563eb; /* Darker blue on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+        .card {
+            background-color: white;
+            border-radius: 1.5rem; /* More rounded corners for cards */
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+            padding: 2.5rem; /* Increased padding */
+        }
+        .section-title {
+            color: #1e3a8a; /* Dark blue for titles */
+            font-weight: 700;
+        }
+        .tool-preview-image {
+            width: 100%;
+            height: auto;
+            max-height: 500px; /* Limit height for large screens */
+            object-fit: cover; /* Ensure image covers area without distortion */
+            border-radius: 1.5rem; /* Rounded corners for the image */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-top: -60px; /* Pulls image up into the header for a cohesive look */
+            position: relative;
+            z-index: 10; /* Ensure it's above other elements if needed */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-16 px-4 shadow-lg rounded-b-3xl">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Your Simple, Printable Travel Itinerary Tool</h1>
+            <p class="text-xl md:text-2xl font-light opacity-90">Plan your adventures with ease, the way you love.</p>
+        </div>
+    </header>
+
+    <!-- Image of Actual Tool/Site Preview -->
+    <div class="container mx-auto px-6 md:px-8">
+        <a href="https://cheaptrip.online/planner.html?utm_source=pinterestpin&utm_medium=social+&utm_campaign=planner" target="_blank" rel="noopener noreferrer">
+            <img src="./tool.png" 
+                 alt="Preview of Your Actual Travel Itinerary Tool" 
+                 class="tool-preview-image mx-auto"
+                 onerror="this.onerror=null;this.src='https://placehold.co/900x500/e0e7ff/3b82f6?text=Image+Not+Found';">
+        </a>
+        <p class="text-center text-sm text-gray-500 mt-4 mb-8">
+            Click the image above to try our full tool!
+        </p>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto p-6 md:p-8">
+
+        <!-- Tool Value Proposition Section -->
+        <section class="card mb-10">
+            <h2 class="section-title text-3xl md:text-4xl mb-6 text-center">Why Our Tool is Perfect for Your Next Trip</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-gray-700 leading-relaxed">
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">Effortless Planning, Zero Tech Headaches</h3>
+                    <p>Forget clunky apps and complex software. Our tool lets you organize your trip details with a simple, intuitive interface. Designed for those who love the clarity of a physical plan.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">Beautifully Printable, Ready for Your Journey</h3>
+                    <p>Generate stunning, organized itineraries that you can print and take with you. Enjoy the satisfaction of having your whole trip laid out on paper, accessible anywhere, anytime – even offline!</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">Customizable to Your Unique Adventure</h3>
+                    <p>Whether it's a quick weekend getaway or a month-long expedition, our tool adapts to your needs. Easily add destinations, activities, accommodations, and notes to create your perfect, personalized itinerary.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">Stay Organized, Stay Stress-Free</h3>
+                    <p>Keep track of flights, hotels, daily schedules, and important contacts all in one place. Our tool helps you visualize your trip, ensuring a smooth and enjoyable experience from start to finish.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action to Your Main Tool -->
+        <section class="card mb-10 text-center py-8">
+            <h2 class="section-title text-3xl md:text-4xl mb-6">Ready to Start Planning Your Dream Trip?</h2>
+            <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                Click below to begin creating your personalized, printable travel itinerary now!
+            </p>
+            <a href="https://cheaptrip.online/planner.html?utm_source=pinterestpin&utm_medium=social+&utm_campaign=planner" class="btn-primary inline-block">
+                Create Your Printable Itinerary
+            </a>
+            <p class="text-sm text-gray-500 mt-4">*(You'll be directed to our main tool page)*</p>
+        </section>
+
+        
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white text-center py-6 px-4 mt-8 rounded-t-3xl">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Cheaptrip. All rights reserved.</p>
+            <p class="text-sm mt-2">
+                <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a> |
+                <a href="terms-of-service.html" class="hover:underline">Terms of Service</a> |
+                <a href="https://cheaptrip.online/contact.html" class="hover:underline">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+      
+        
