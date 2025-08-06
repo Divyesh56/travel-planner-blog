@@ -1,13 +1,10 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan Your Trips Simply: Introducing CheapTrip, Your Free Travel Planner</title>
-    <!-- Tailwind CSS CDN for easy styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter for clean typography -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
@@ -24,13 +21,19 @@
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            text-align: left; /* Align text to the left within the container */
+        }
+        .top-cta {
+            text-align: center;
+            margin-bottom: 30px;
         }
         h1 {
-            font-size: 2.5rem; /* text-4xl */
+            font-size: 3rem; /* Increased font size for title */
             font-weight: 800; /* font-extrabold */
             color: #1a202c; /* gray-900 */
             margin-bottom: 25px;
             line-height: 1.2;
+            text-align: center; /* Center the title */
         }
         h2 {
             font-size: 1.875rem; /* text-3xl */
@@ -65,8 +68,6 @@
             text-decoration: none;
             transition: background-color 0.3s ease, transform 0.3s ease;
             box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
-            margin-top: 30px;
-            margin-bottom: 20px;
         }
         .cta-button:hover {
             background-color: #059669; /* Darker green on hover */
@@ -76,8 +77,7 @@
             font-weight: 700;
             color: #2d3748;
         }
-
-         /* Footer Styling */
+        /* Footer Styling */
         .site-footer {
             background-color: #2d3748; /* Dark gray */
             color: #cbd5e0; /* Light gray text */
@@ -104,7 +104,7 @@
                 padding: 20px;
             }
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
             h2 {
                 font-size: 1.5rem;
@@ -116,8 +116,7 @@
                 padding: 12px 25px;
                 font-size: 1.125rem;
             }
-
-                .site-footer {
+            .site-footer {
                 padding: 20px 15px;
             }
             .site-footer a {
@@ -125,11 +124,16 @@
                 margin: 10px 0;
             }
         }
-
     </style>
 </head>
 <body>
     <div class="blog-container">
+        <div class="top-cta">
+            <a href="https://cheaptrip.online/planner.html?utm_source=pinterestpin&utm_medium=social+&utm_campaign=planner" class="cta-button">
+                Start Planning Your Free Trip Now!
+            </a>
+        </div>
+
         <h1>Plan Your Trips Simply: Introducing CheapTrip, Your Free Travel Planner</h1>
 
         <p>Planning a trip can often feel overwhelming. Between booking flights, finding accommodations, and figuring out daily activities, the excitement can quickly turn into stress. Many complex travel apps promise solutions but often add more confusion.</p>
@@ -177,26 +181,21 @@
             </a>
         </div>
 
-        
         <p class="text-center text-gray-600 text-sm mt-5">Happy travels!</p>
     </div>
 
-     <!-- Footer Section -->
     <footer class="site-footer">
         <p>&copy; <span id="currentYear"></span> CheapTrip. All rights reserved.</p>
         <div class="footer-links mt-2">
             <a href="../privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
             <a href="../terms-of-service.html" target="_blank" rel="noopener noreferrer">Terms of Service</a>
-             <a href="https://cheaptrip.online/contact.html" class="hover:underline">Contact Us</a>
-            <!-- Add more links as needed, e.g., "Contact Us" -->
+            <a href="https://cheaptrip.online/contact.html" class="hover:underline">Contact Us</a>
         </div>
     </footer>
 
-     <script>
+    <script>
         // Dynamically set the current year for the copyright notice
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
-
-
