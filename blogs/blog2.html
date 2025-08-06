@@ -1,13 +1,10 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Free, Instant Travel Planner: No Sign-Ups, Just Planning! - CheapTrip</title>
-    <!-- Tailwind CSS CDN for easy styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter for clean typography -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
@@ -29,13 +26,15 @@
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             flex-grow: 1; /* Allow blog content to grow and push footer down */
+            text-align: left; /* Align text to the left within the container */
         }
         h1 {
-            font-size: 2.5rem; /* text-4xl */
+            font-size: 3.5rem; /* Increased font size for title */
             font-weight: 800; /* font-extrabold */
             color: #1a202c; /* gray-900 */
             margin-bottom: 25px;
             line-height: 1.2;
+            text-align: center; /* Center the title */
         }
         h2 {
             font-size: 1.875rem; /* text-3xl */
@@ -59,6 +58,11 @@
         li {
             margin-bottom: 8px;
         }
+        .cta-container {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
         .cta-button {
             display: inline-block;
             background-color: #10B981; /* A shade of green */
@@ -70,8 +74,6 @@
             text-decoration: none;
             transition: background-color 0.3s ease, transform 0.3s ease;
             box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
-            margin-top: 30px;
-            margin-bottom: 20px;
         }
         .cta-button:hover {
             background-color: #059669; /* Darker green on hover */
@@ -108,7 +110,7 @@
                 padding: 20px;
             }
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
             h2 {
                 font-size: 1.5rem;
@@ -132,7 +134,13 @@
 </head>
 <body>
     <div class="blog-container">
-        <h1>Your Free, Instant Travel Planner: No Sign-Ups, Just Planning!</h1>
+        <h1 style=" font-size: 3.5rem;">Your Free, Instant Travel Planner: No Sign-Ups, Just Planning!</h1>
+
+        <div class="cta-container">
+            <a href="https://cheaptrip.online/planner.html?utm_source=pinterestpin&utm_medium=social+&utm_campaign=planner" class="cta-button">
+                Start Planning Your Free Trip Now!
+            </a>
+        </div>
 
         <p>Planning a trip should be exciting, not stressful. But juggling itineraries, tracking expenses, and making sure you pack everything can quickly become a headache. Many online tools are overly complicated or demand your personal details just to get started.</p>
 
@@ -164,24 +172,21 @@
         <h2>Ready to Plan Your Trip the Easy Way?</h2>
         <p>Stop wasting time on complicated tools. Get your travel plans in order quickly and efficiently with CheapTrip.</p>
 
-        <div class="text-center">
+        <div class="cta-container">
             <a href="https://cheaptrip.online/planner.html?utm_source=pinterestpin&utm_medium=social+&utm_campaign=planner" class="cta-button">
                 Start Planning Your Free Trip Now!
             </a>
         </div>
- 
 
         <p class="text-center text-gray-600 text-sm mt-5">Happy travels!</p>
     </div>
 
-    <!-- Footer Section -->
     <footer class="site-footer">
         <p>&copy; <span id="currentYear"></span> CheapTrip. All rights reserved.</p>
         <div class="footer-links mt-2">
             <a href="../privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
             <a href="../terms-of-service.html" target="_blank" rel="noopener noreferrer">Terms of Service</a>
-             <a href="https://cheaptrip.online/contact.html" class="hover:underline">Contact Us</a>
-            <!-- Add more links as needed, e.g., "Contact Us" -->
+            <a href="https://cheaptrip.online/contact.html" class="hover:underline">Contact Us</a>
         </div>
     </footer>
 
@@ -191,5 +196,3 @@
     </script>
 </body>
 </html>
-
-
