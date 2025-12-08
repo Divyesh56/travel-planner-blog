@@ -52,6 +52,15 @@
             position: relative;
             z-index: 10; /* Ensure it's above other elements if needed */
         }
+
+     /* NEW STYLES FOR PDF VIEWER */
+        .pdf-viewer-container {
+            height: 600px; 
+            overflow-y: scroll; 
+            border: 1px solid #e2e8f0; 
+            border-radius: 0.75rem;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Inner shadow for depth */
+        }
     </style>
 </head>
 <body class="flex flex-col min-h-screen">
@@ -107,7 +116,7 @@
      <section class="card mb-10">
             <h2 class="section-title text-3xl md:text-4xl mb-6 text-center">Peek Inside: See a Sample Printable Plan</h2>
             <div class="pdf-viewer-container">
-                <iframe src="[YOUR_SAMPLE_PDF_URL_HERE]" title="Sample Printable Itinerary Preview" style="width: 100%; height: 100%; border: none;"></iframe>
+                <iframe src="sample-plan.pdf" title="Sample Printable Itinerary Preview" style="width: 100%; height: 100%; border: none;"></iframe>
             </div>
             <p class="text-center text-sm text-gray-500 mt-4">Scroll within the box above to preview the full plan layout.</p>
         </section>
@@ -124,7 +133,7 @@
             <p class="text-sm text-gray-500 mt-4">*(You'll be directed to our main tool page)*</p>
         </section>
 
-        <section class="card mb-10">
+        <!-- <section class="card mb-10">
             <h2 class="section-title text-2xl md:text-3xl mb-6 text-center">🔗 Helpful Trip Planning Resources</h2>
             <p class="text-center text-gray-600 mb-6">Explore essential tools and guides to complete your travel research.</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -133,7 +142,7 @@
                 <a href="#" class="text-blue-600 hover:text-blue-800 font-medium p-3 border border-blue-200 rounded-lg transition duration-200 shadow-sm">Currency Converter Tool</a>
                 <a href="#" class="text-blue-600 hover:text-blue-800 font-medium p-3 border border-blue-200 rounded-lg transition duration-200 shadow-sm">Solo Travel Safety Tips</a>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
