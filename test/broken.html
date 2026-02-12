@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scanner Test - Messy Page</title>
+    <style>
+        body { font-family: sans-serif; padding: 50px; line-height: 1.6; }
+        .red { color: red; font-weight: bold; }
+        .green { color: green; }
+    </style>
+</head>
+<body>
+    <h1>404 Checker Test Site</h1>
+    <p>This page is live on GitHub. Use your tool to scan it!</p>
+    
+    <ul>
+        <li><a href="https://google.com" class="green">Working Link (Google)</a> - Tool should say OK.</li>
+        <li><a href="https://mail.google.com/mail/" class="green">Protected Link (Gmail)</a> - Tool should ignore (Status 403).</li>
+        <li><a href="https://github.com/this-is-a-fake-link-123456789" class="red">Broken Link 1 (GitHub 404)</a> - Tool should catch.</li>
+        <li><a href="https://www.google.com/error-test-404" class="red">Broken Link 2 (Google 404)</a> - Tool should catch.</li>
+    </ul>
+
+    <p><a href="empty.html">Go to the Empty Test Page</a></p>
+</body>
+</html>
